@@ -1,15 +1,13 @@
-/* Fonts */
 :root {
+  /* Fonts */
   --fs-15: calc(15 / 16 * 1rem);
   --fs-16: calc(16 / 16 * 1rem);
   --fs-22: calc(22 / 16 * 1rem);
 
   --font-size-p: var(--fs-16);
   --font-size-h1: var(--fs-22);
-}
 
-/* Colors */
-:root {
+  /* Colors */
   --c-white: hsl(0, 0%, 100%);
   --c-slate-300: hsl(212, 45%, 89%);
   --c-slate-500: hsl(216, 15%, 48%);
@@ -53,7 +51,7 @@ svg {
 }
 
 .wrapper {
-  width: calc(100% - 60px);
+  width: calc(100% - calc(60 / 16 * 1rem));
   max-width: 315px;
   display: flex;
   flex-direction: column;
@@ -73,7 +71,7 @@ svg {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  padding-inline: 16px;
+  padding-inline: 14px;
   margin-block: 25px;
   text-align: center;
 }
